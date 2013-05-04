@@ -14,6 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.riddler.app.domain.account.UserAccount;
 import com.riddler.app.domain.post.BlogPost;
+import com.riddler.app.domain.riddle.Riddle;
 import com.riddler.app.message.Message;
 import com.riddler.app.message.MessageType;
 import com.riddler.app.web.AbstractPublicPageController;
@@ -26,7 +27,7 @@ public class HomeController extends AbstractPublicPageController {
     }
 
     /**
-     * Simply selects the home view to render by returning its name.
+     * Checks for news and riddles
      */
     @RequestMapping(value = "/", method = RequestMethod.GET)
     public String home(Model uiModel, HttpServletRequest request) {
@@ -42,8 +43,22 @@ public class HomeController extends AbstractPublicPageController {
         //If no blog posts, return a message
         else {
             uiModel.addAttribute("latestBlog", null);
-            uiModel.addAttribute("message", 
+            uiModel.addAttribute("blogMessage", 
                     new Message(MessageType.INFO, "No blog post yet. Stay tuned..."));
+
+        }
+
+        //Get recent blog posts, add to model
+        List<Riddle> riddles = riddleService.getAllRiddles();
+        if (riddles.size() > 0) {
+            uiModel.addAttribute("riddles", riddles);
+        } 
+
+        //If no riddles, return a message
+        else {
+            uiModel.addAttribute("riddles", null);
+            uiModel.addAttribute("riddleMessage", 
+                    new Message(MessageType.INFO, "No riddles yet. Stay tuned..."));
 
         }
 

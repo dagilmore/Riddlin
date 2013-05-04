@@ -16,6 +16,7 @@ import com.riddler.app.domain.post.BlogPostService;
 import com.riddler.app.domain.post.CommentPostService;
 import com.riddler.app.domain.post.SlidePostService;
 import com.riddler.app.domain.system.CounterService;
+import com.riddler.app.domain.riddle.RiddleService;
 
 public class AbstractPageController {
     @Inject
@@ -28,6 +29,9 @@ public class AbstractPageController {
     protected SlidePostService slidePostService;
     @Inject
     protected CounterService counterService;
+    @Inject
+    protected RiddleService riddleService;
+
 
     @ModelAttribute("loggedinUserAccount")
     public UserAccount addLoggedinUserAccount() {

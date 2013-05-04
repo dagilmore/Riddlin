@@ -115,8 +115,7 @@ public class BlogController extends AbstractPublicPageController {
 
     /**
      * Post comment from blog post page.
-     * 
-     * @param id
+     *
      * @param commentForm
      * @param bindingResult
      * @param uiModel
@@ -162,9 +161,7 @@ public class BlogController extends AbstractPublicPageController {
     
     /**
      * For single slide page.
-     * 
-     * @param year
-     * @param month
+     *
      * @param path
      * @param uiModel
      * @param request

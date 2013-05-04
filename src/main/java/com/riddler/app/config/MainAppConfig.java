@@ -22,6 +22,9 @@ import com.riddler.app.domain.post.CommentPostServiceImpl;
 import com.riddler.app.domain.post.SlidePostRepository;
 import com.riddler.app.domain.post.SlidePostService;
 import com.riddler.app.domain.post.SlidePostServiceImpl;
+import com.riddler.app.domain.riddle.RiddleService;
+import com.riddler.app.domain.riddle.RiddleServiceImpl;
+import com.riddler.app.domain.riddle.RiddleRepository;
 import com.riddler.app.domain.system.CounterService;
 import com.riddler.app.domain.system.CounterServiceImpl;
 
@@ -41,6 +44,8 @@ class MainAppConfig {
     private SlidePostRepository slidePostRepository;
     @Inject
     private UserSocialConnectionRepository userSocialConnectionRepository;
+    @Inject
+    private RiddleRepository riddleRepository;
 
     //Application Service beans
     @Bean
@@ -75,6 +80,11 @@ class MainAppConfig {
     @Bean
     public UserAdminService userAdminService(MongoTemplate mongoTemplate) {
         return new UserAdminServiceImpl(accountRepository, counterService(mongoTemplate));
+    }
+
+    @Bean
+    public RiddleService riddleService() {
+        return new RiddleServiceImpl(riddleRepository);
     }
 
     @Bean
