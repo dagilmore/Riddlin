@@ -2,51 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f440b790-da5b-40c4-8a67-6b9bd10434e3" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/AbstractPost.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/AbstractPostServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/BlogPost.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/BlogPostRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/BlogPostService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/BlogPostServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/CommentPost.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/CommentPostRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/CommentPostService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/CommentPostServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/SlidePost.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/SlidePostRepository.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/SlidePostService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/SlidePostServiceImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/post/StyleType.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/CommentNotificationSender.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/CommentNotificationSenderImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/ContactMessageSender.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/ContactMessageSenderImpl.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/blog/BlogController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/blog/CommentForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/blog/ContactController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/blog/ContactForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/post/BlogForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/post/MyPostController.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/post/PublishForm.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/post/SlideForm.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPublicPageController.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPublicPageController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/admin/AdminController.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/admin/AdminController.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/mail/AbstractMailSender.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/resources/alphamail.properties" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/config/CloudConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/config/CloudConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/HomeController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/config/LocalConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/config/LocalConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/config/MainAppConfig.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/config/MainAppConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/account/MyAccountController.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/web/account/MyAccountController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/account/UserAdminService.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/account/UserAdminService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/account/UserRoleType.java" afterPath="$PROJECT_DIR$/src/main/java/com/riddlin/app/domain/account/UserRoleType.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/resources/localConfig.properties" afterPath="$PROJECT_DIR$/src/main/resources/localConfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/header.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/partials/header.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pages/home.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/pages/home.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
     </list>
     <ignored path="Riddlin.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Dummy.txt" changelist="f440b790-da5b-40c4-8a67-6b9bd10434e3" time="1367737323480" ignored="false" />
-    <file path="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" changelist="f440b790-da5b-40c4-8a67-6b9bd10434e3" time="1367737186889" ignored="false" />
     <file path="$PROJECT_DIR$/src/main/resources/security.xml" changelist="f440b790-da5b-40c4-8a67-6b9bd10434e3" time="1367737186892" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -112,9 +78,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="17" column="13" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -123,9 +87,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPublicPageController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="5" column="62" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -134,9 +96,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/HomeController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="69" column="53" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,7 +128,7 @@
           <provider selected="true" editor-type-id="text-editor">
             <state line="80" column="5" selection-start="3505" selection-end="3505" vertical-scroll-proportion="0.0">
               <folding>
-                <element signature="imports" expanded="true" />
+                <element signature="e#1450#1463#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -177,7 +137,7 @@
       <file leaf-file-name="CloudConfig.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/config/CloudConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="5" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
+            <state line="16" column="5" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -189,9 +149,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/account/MyAccountController.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="135" column="5" selection-start="6335" selection-end="6335" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
@@ -338,36 +296,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="riddlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Riddlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Riddlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="riddlin" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -391,10 +319,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="riddlin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -550,7 +474,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3296" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32988048" sideWeight="0.6704" order="0" side_tool="false" content_ui="tabs" />
@@ -643,9 +567,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/account/MyAccountController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="135" column="5" selection-start="6335" selection-end="6335" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -653,7 +575,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="80" column="5" selection-start="3505" selection-end="3505" vertical-scroll-proportion="0.0">
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#1450#1463#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -661,33 +583,27 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="13" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/AbstractPublicPageController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="5" column="62" selection-start="138" selection-end="138" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/web/HomeController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="69" column="53" selection-start="2440" selection-end="2440" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/riddlin/app/config/CloudConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="5" selection-start="1005" selection-end="1005" vertical-scroll-proportion="0.0">
+        <state line="16" column="5" selection-start="429" selection-end="429" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

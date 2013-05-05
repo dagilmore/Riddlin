@@ -34,7 +34,6 @@ com/riddlin/app/domain/account/AccountServiceImpl.class
 com/riddlin/app/domain/account/MongoConnectionRepositoryImpl.class
 com/riddlin/app/domain/BaseEntity.class
 com/riddlin/app/config/MongoConfig.class
-com/riddlin/mail/AbstractMailSender.class
 com/riddlin/app/web/AbstractPublicPageController.class
 com/riddlin/app/config/LocalConfig.class
 com/riddlin/app/domain/account/UserRoleType.class

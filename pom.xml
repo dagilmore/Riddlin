@@ -369,12 +369,6 @@
 			<version>0.8</version>
 		</dependency>
 
-		<!-- AlphaMail Java Client at GitHub jiwhiz maven repository -->
-		<dependency>
-			<groupId>com.comfirm.alphamail</groupId>
-			<artifactId>alphamail-java-client</artifactId>
-			<version>0.1.0</version>
-		</dependency>
 
 	</dependencies>
 

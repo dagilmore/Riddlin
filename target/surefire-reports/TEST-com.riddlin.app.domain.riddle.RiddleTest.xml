@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.003" errors="0" skipped="0" tests="5" name="com.riddlin.app.domain.riddle.RiddleTest">
+<testsuite failures="0" time="0.001" errors="0" skipped="0" tests="5" name="com.riddlin.app.domain.riddle.RiddleTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/local/jdk/jre/lib/i386"/>
@@ -63,5 +63,5 @@
   <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testSetAnswer"/>
   <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testGetRiddle"/>
   <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testSetRiddle"/>
-  <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testToString"/>
+  <testcase time="0.001" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testToString"/>
 </testsuite>

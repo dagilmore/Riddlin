@@ -1,7 +1,5 @@
 <%@ include file="/WEB-INF/views/partials/header.jsp" %>
 
-<%@ include file="/WEB-INF/views/partials/signinForm.jsp" %>
-
 <c:if test="${not empty latestBlog}">
     ${latestBlog.title}
 </c:if>

@@ -20,12 +20,20 @@
     
 	<div class="centerDiv">
 		<ul class="centerUL">
-			<li><a href="<c:url value="/blog"/>">News</a></li>
+			<li><a href="<c:url value="/riddles"/>">Riddles</a></li>
 			<li><a href="<c:url value="/about"/>">About</a></li>
-			<li><a href="<c:url value="/sponsorHome"/>">My Riddles</a></li>
-			<li><a href="<c:url value="/signin"/>">Sponsor!</a></li>
+			<li><a href="<c:url value="/signup"/>">Advertise</a></li>
 		</ul>
 	</div>
     
 
 </div>  
+
+<c:choose>
+  <c:when test="${userAccount != null}">
+  	Welcome, ${userAccount.displayName}
+  </c:when>
+  <c:otherwise>
+  	<%@ include file="/WEB-INF/views/partials/signinForm.jsp" %> 
+  </c:otherwise>
+</c:choose>

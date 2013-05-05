@@ -23,7 +23,6 @@
 /home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/app/config/LocalConfig.java
 /home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/app/domain/system/CounterService.java
 /home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/app/web/HomeController.java
-/home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/mail/AbstractMailSender.java
 /home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/app/domain/system/Counter.java
 /home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/app/domain/account/UserSocialConnectionRepository.java
 /home/david/Programming/spring/Riddlin/src/main/java/com/riddlin/app/domain/riddle/RiddleServiceImpl.java
