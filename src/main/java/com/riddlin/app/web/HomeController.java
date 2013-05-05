@@ -13,7 +13,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.riddlin.app.domain.account.UserAccount;
-import com.riddlin.app.domain.post.BlogPost;
 import com.riddlin.app.domain.riddle.Riddle;
 import com.riddlin.app.message.Message;
 import com.riddlin.app.message.MessageType;
@@ -69,7 +68,6 @@ public class HomeController extends AbstractPublicPageController {
         account.setConnections(accountService.getConnectionsByUserId(account.getUserId()));
         
         uiModel.addAttribute("profileUser", account);
-        uiModel.addAttribute("comments", this.commentPostService.getPublishedCommentsForUser(userId));
         
         return "pages/userProfile";
     }

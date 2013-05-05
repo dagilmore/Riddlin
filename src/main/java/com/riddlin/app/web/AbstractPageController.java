@@ -12,21 +12,12 @@ import org.springframework.web.util.WebUtils;
 import com.riddlin.app.domain.account.AccountService;
 import com.riddlin.app.domain.account.AccountUtils;
 import com.riddlin.app.domain.account.UserAccount;
-import com.riddlin.app.domain.post.BlogPostService;
-import com.riddlin.app.domain.post.CommentPostService;
-import com.riddlin.app.domain.post.SlidePostService;
 import com.riddlin.app.domain.system.CounterService;
 import com.riddlin.app.domain.riddle.RiddleService;
 
 public class AbstractPageController {
     @Inject
     protected AccountService accountService;
-    @Inject
-    protected BlogPostService blogPostService;
-    @Inject
-    protected CommentPostService commentPostService;
-    @Inject
-    protected SlidePostService slidePostService;
     @Inject
     protected CounterService counterService;
     @Inject

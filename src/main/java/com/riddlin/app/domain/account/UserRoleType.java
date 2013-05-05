@@ -6,9 +6,9 @@ import org.springframework.security.core.GrantedAuthority;
  * Security role type for UserAccount.
  */
 public enum UserRoleType implements GrantedAuthority{
-    ROLE_ADMIN,  // can manage user account, all posts
-    ROLE_AUTHOR, // can manage own posts
-    ROLE_USER   // can edit own comment, can edit own profile
+    ROLE_ADMIN, 
+    ROLE_AUTHOR, 
+    ROLE_USER   
     ;
 
     @Override

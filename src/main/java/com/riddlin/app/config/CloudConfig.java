@@ -11,10 +11,6 @@ import org.springframework.core.env.Environment;
 
 import com.comfirm.alphamail.services.client.AlphaMailService;
 import com.comfirm.alphamail.services.client.DefaultAlphaMailService;
-import com.riddlin.app.web.CommentNotificationSender;
-import com.riddlin.app.web.CommentNotificationSenderImpl;
-import com.riddlin.app.web.ContactMessageSender;
-import com.riddlin.app.web.ContactMessageSenderImpl;
 
 
 @Configuration
@@ -30,23 +26,5 @@ public class CloudConfig {
         mailService.setServiceUrl(environment.getProperty("alphamail.url"));
         mailService.setApiToken(environment.getProperty("alphamail.token"));
         return mailService;
-    }
-
-    @Bean
-    public ContactMessageSender contactMessageSender() {
-        ContactMessageSenderImpl sender = new ContactMessageSenderImpl(alphaMailService());
-        sender.setProjectId(environment.getProperty("alphamail.project.contactMessage.id", int.class));
-        sender.setAdminName(environment.getProperty("alphamail.adminName"));
-        sender.setAdminEmail(environment.getProperty("alphamail.adminEmail"));
-        return sender;
-    }
-
-    @Bean
-    public CommentNotificationSender commentNotificationSender() {
-        CommentNotificationSenderImpl sender = new CommentNotificationSenderImpl(alphaMailService());
-        sender.setProjectId(environment.getProperty("alphamail.project.comment.notification.id", int.class));
-        sender.setAdminName(environment.getProperty("alphamail.adminName"));
-        sender.setAdminEmail(environment.getProperty("alphamail.adminEmail"));
-        return sender;
     }
 }

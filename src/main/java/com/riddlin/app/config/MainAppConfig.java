@@ -13,15 +13,6 @@ import com.riddlin.app.domain.account.UserAccountRepository;
 import com.riddlin.app.domain.account.UserAdminService;
 import com.riddlin.app.domain.account.UserAdminServiceImpl;
 import com.riddlin.app.domain.account.UserSocialConnectionRepository;
-import com.riddlin.app.domain.post.BlogPostRepository;
-import com.riddlin.app.domain.post.BlogPostService;
-import com.riddlin.app.domain.post.BlogPostServiceImpl;
-import com.riddlin.app.domain.post.CommentPostRepository;
-import com.riddlin.app.domain.post.CommentPostService;
-import com.riddlin.app.domain.post.CommentPostServiceImpl;
-import com.riddlin.app.domain.post.SlidePostRepository;
-import com.riddlin.app.domain.post.SlidePostService;
-import com.riddlin.app.domain.post.SlidePostServiceImpl;
 import com.riddlin.app.domain.riddle.RiddleService;
 import com.riddlin.app.domain.riddle.RiddleServiceImpl;
 import com.riddlin.app.domain.riddle.RiddleRepository;
@@ -37,12 +28,6 @@ class MainAppConfig {
     @Inject
     private UserAccountRepository accountRepository;
     @Inject
-    private BlogPostRepository blogPostRepository;
-    @Inject
-    private CommentPostRepository commentPostRepository;
-    @Inject
-    private SlidePostRepository slidePostRepository;
-    @Inject
     private UserSocialConnectionRepository userSocialConnectionRepository;
     @Inject
     private RiddleRepository riddleRepository;
@@ -53,27 +38,6 @@ class MainAppConfig {
                     UserSocialConnectionRepository userSocialConnectionRepository) {
         AccountServiceImpl service = new AccountServiceImpl(accountRepository, userSocialConnectionRepository,
                 userAdminService(mongoTemplate));
-        return service;
-    }
-
-    @Bean
-    public BlogPostService blogPostService(MongoTemplate mongoTemplate) {
-        BlogPostServiceImpl service = new BlogPostServiceImpl(accountRepository, blogPostRepository, 
-                commentPostRepository, userAdminService(mongoTemplate), counterService(mongoTemplate));
-        return service;
-    }
-
-    @Bean
-    public CommentPostService commentPostService(MongoTemplate mongoTemplate) {
-        CommentPostServiceImpl service = new CommentPostServiceImpl(accountRepository, blogPostRepository, 
-                commentPostRepository, userAdminService(mongoTemplate), counterService(mongoTemplate));
-        return service;
-    }
-    
-    @Bean
-    public SlidePostService slidePostService(MongoTemplate mongoTemplate) {
-        SlidePostServiceImpl service = new SlidePostServiceImpl(accountRepository, slidePostRepository, 
-                userAdminService(mongoTemplate), counterService(mongoTemplate));
         return service;
     }
 

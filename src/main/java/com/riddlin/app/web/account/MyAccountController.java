@@ -18,12 +18,11 @@ import org.springframework.web.context.request.WebRequest;
 
 import com.riddlin.app.domain.account.AccountUtils;
 import com.riddlin.app.domain.account.UserAccount;
-import com.riddlin.app.domain.post.CommentPost;
 import com.riddlin.app.message.Message;
 import com.riddlin.app.message.MessageType;
 import com.riddlin.app.web.AbstractPageController;
 import com.riddlin.app.web.PageWrapper;
-import com.riddlin.app.web.blog.CommentForm;
+
 
 /**
  * Controller for account pages.
@@ -56,7 +55,7 @@ public class MyAccountController extends AbstractPageController {
             uiModel.addAttribute("duplicateConnectionError", Boolean.TRUE);
         }
         
-        return "myAccount/overview";
+        return "pages/myAccount/overview";
     }
 
     @RequestMapping(value = "/editProfile", produces = "text/html")
@@ -67,7 +66,7 @@ public class MyAccountController extends AbstractPageController {
         account = accountService.findByUserId(account.getUserId());
         uiModel.addAttribute("userAccount", account);
         uiModel.addAttribute("profileForm", new ProfileForm(account));
-        return "myAccount/editProfile";
+        return "pages/myAccount/editProfile";
     }
 
     @RequestMapping(value = "/editProfile", method = RequestMethod.PUT, produces = "text/html")
@@ -76,7 +75,7 @@ public class MyAccountController extends AbstractPageController {
         if (bindingResult.hasErrors()) {
             uiModel.addAttribute("userAccount", AccountUtils.getLoginUserAccount());
             uiModel.addAttribute("profileForm", profileForm);
-            return "myAccount/editProfile";
+            return "pages/myAccount/editProfile";
         }
         
         UserAccount account = AccountUtils.getLoginUserAccount();
@@ -134,40 +133,6 @@ public class MyAccountController extends AbstractPageController {
             accountService.updateImageUrl(account.getUserId(), account.getFacebookConnection().getImageUrl());
         }
         return "redirect:/myAccount";
-    }
-
-    @RequestMapping(value = "/myComments" , method = RequestMethod.GET, produces = "text/html")
-    public String listComments(Model uiModel, Pageable pageable) {
-        UserAccount account = AccountUtils.getLoginUserAccount();
-        logger.debug("==>MyAccountController.listComments(), userId=" + account.getUserId());
-        PageWrapper<CommentPost> page = new PageWrapper<CommentPost>(
-                commentPostService.getAllCommentsForUser(account.getUserId(), pageable), "/myAccount/myComments");
-        uiModel.addAttribute("page", page);
-        return "myAccount/myComments";
-    }
-    
-    @RequestMapping(value = "/updateComment/{id}", method = RequestMethod.GET, produces = "text/html")
-    public String updateCommentForm(@PathVariable("id") String id, Model uiModel) {
-        uiModel.addAttribute("commentForm", new CommentForm(commentPostService.getCommentById(id)));
-        return "myAccount/editComment";
-    }
-
-    @RequestMapping(value = "/updateComment", method = RequestMethod.PUT, produces = "text/html")
-    public String updateComment(@ModelAttribute("commentForm") @Valid CommentForm commentForm, BindingResult bindingResult, Model uiModel,
-            HttpServletRequest httpServletRequest) {
-        logger.debug("==>MyAccountController.updateComment(), comment id=" + commentForm.getId());
-        if (bindingResult.hasErrors()) {
-            uiModel.addAttribute("commentForm", commentForm);
-            return "myAccount/editComment";
-        }
-        try{
-            commentPostService.updateComment(commentForm.getId(), commentForm.getContent());
-            return "redirect:/myAccount/myComments";
-        } catch (Exception ex){
-            uiModel.addAttribute("message", new Message(MessageType.ERROR, "Error while update comment: "+ex.getMessage()));
-            uiModel.addAttribute("commentForm", commentForm);
-            return "myAccount/editComment";
-        }
     }
 
 }

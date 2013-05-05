@@ -16,16 +16,12 @@ public interface UserAdminService extends SocialUserDetailsService, UserDetailsS
      * Creates a new UserAccount with user social network account Connection Data.
      * Default has ROLE_USER
      * 
-     * @param data
-     * @return
      */
     UserAccount createUserAccount(ConnectionData data);
 
     /**
      * Add Author role to user account or remove Author role from user account.
      * 
-     * @param userId
-     * @param isAuthor
      */
     void setAuthor(String userId, boolean isAuthor);
     
@@ -37,8 +33,6 @@ public interface UserAdminService extends SocialUserDetailsService, UserDetailsS
     
     /**
      * Gets current logged in user. Reload UserAccount object from userId in SecurityContextHolder. 
-     * 
-     * @return UserAccount object from database for current user
      */
     UserAccount getCurrentUser();
 

@@ -13,14 +13,14 @@
 <div id="header">
 	
     
-    <h1>
-    	<a href="<c:url value="/"/>"><img src="<c:url value="/resources/images/riddlin.png"/>"></img></a>
-    	<a href="<c:url value="/"/>">Riddl.in</a>
-    </h1>
-    
-	<div class="centerDiv">
+   	<div class="centerDiv">
+	    <h1>
+	    	<a href="<c:url value="/"/>"><img src="<c:url value="/resources/images/riddlin.png"/>"></img></a>
+	    	<a href="<c:url value="/"/>">Riddl.in</a>
+	    </h1>
+	    
+
 		<ul class="centerUL">
-			<li><a href="<c:url value="/blog"/>">News</a></li>
 			<li><a href="<c:url value="/about"/>">About</a></li>
 			<li><a href="<c:url value="/sponsorHome"/>">My Riddles</a></li>
 			<li><a href="<c:url value="/signin"/>">Sponsor!</a></li>
