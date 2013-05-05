@@ -5,7 +5,7 @@
 
 <%@ include file="/WEB-INF/views/partials/include.jsp" %>
 
-<title>Riddler</title>
+<title>Riddlin</title>
 <meta charset="utf-8" />
 
 </head>

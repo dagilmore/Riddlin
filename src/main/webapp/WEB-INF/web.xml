@@ -2,7 +2,7 @@
 <web-app version="2.5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd">
 
-	<display-name>RiddlerApp</display-name>
+	<display-name>RiddlinApp</display-name>
 
 	<description>Riddle Web Application</description>
 
@@ -15,7 +15,7 @@
 	<!-- Location of Java @Configuration classes that configure the components that makeup this application -->
 	<context-param>
 		<param-name>contextConfigLocation</param-name>
-		<param-value>com.riddler.app.config</param-value>
+		<param-value>com.riddlin.app.config</param-value>
 	</context-param>
 
 	<!-- Specifies the default mode of this application, to be activated if no other profile (or mode) is specified -->
