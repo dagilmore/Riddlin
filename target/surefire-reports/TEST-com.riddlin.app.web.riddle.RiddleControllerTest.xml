@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite failures="0" time="0.005" errors="0" skipped="0" tests="2" name="com.riddlin.app.web.riddle.RiddleControllerTest">
+<testsuite failures="0" time="0.006" errors="0" skipped="0" tests="2" name="com.riddlin.app.web.riddle.RiddleControllerTest">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/local/jdk/jre/lib/i386"/>
@@ -59,6 +59,6 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase time="0.005" classname="com.riddlin.app.web.riddle.RiddleControllerTest" name="testGetRiddleById"/>
-  <testcase time="0" classname="com.riddlin.app.web.riddle.RiddleControllerTest" name="testGetRiddles"/>
+  <testcase time="0.005" classname="com.riddlin.app.web.riddle.RiddleControllerTest" name="testGetRiddles"/>
+  <testcase time="0.001" classname="com.riddlin.app.web.riddle.RiddleControllerTest" name="testGetRiddleById"/>
 </testsuite>
