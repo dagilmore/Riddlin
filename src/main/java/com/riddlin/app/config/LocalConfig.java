@@ -19,7 +19,7 @@ public class LocalConfig {
     public ContactMessageSender contactMessageSender() {
         return new ContactMessageSender(){
             public void send(ContactForm contact){
-                System.out.println(String.format("Send email message to jiwhiz. From  %s: \" %s \""
+                System.out.println(String.format("Send email message. From  %s: \" %s \""
                                 , contact.getName(), contact.getMessage()));
             }
         };
