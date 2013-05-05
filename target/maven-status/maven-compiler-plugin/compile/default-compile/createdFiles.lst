@@ -2,6 +2,7 @@ com/riddler/app/domain/account/AccountUtils.class
 com/riddler/app/web/PageWrapper$PageItem.class
 com/riddler/app/domain/post/AbstractPostServiceImpl.class
 com/riddler/app/domain/post/SlidePostService.class
+com/riddler/app/domain/riddle/Riddle.class
 com/riddler/app/domain/account/UserRoleType.class
 com/riddler/app/web/CommentNotificationSenderImpl.class
 com/riddler/app/domain/account/UserAdminService.class
@@ -13,6 +14,7 @@ com/riddler/app/domain/post/CommentPostService.class
 com/riddler/app/domain/post/AbstractPost.class
 com/riddler/mail/AbstractMailSender.class
 com/riddler/app/web/blog/CommentForm.class
+com/riddler/app/domain/riddle/RiddleServiceImpl.class
 com/riddler/app/web/post/SlideForm.class
 com/riddler/app/domain/post/SlidePostRepository.class
 com/riddler/app/domain/account/RememberMeToken.class
@@ -32,12 +34,14 @@ com/riddler/app/domain/post/SlidePost.class
 com/riddler/app/config/MongoConfig.class
 com/riddler/app/web/AutoConnectionSignUp.class
 com/riddler/app/domain/post/BlogPostServiceImpl.class
+com/riddler/app/domain/riddle/RiddleService.class
 com/riddler/app/domain/account/UserSocialConnection.class
 com/riddler/app/domain/account/UserAdminServiceImpl.class
 com/riddler/app/domain/post/BlogPost.class
 com/riddler/app/config/WebConfig.class
 com/riddler/app/domain/system/CounterService.class
 com/riddler/app/domain/system/CounterServiceImpl.class
+com/riddler/app/web/riddle/RiddleController.class
 com/riddler/app/web/PageWrapper.class
 com/riddler/app/web/CommentNotificationSenderImpl$Payload.class
 com/riddler/app/web/ContactMessageSenderImpl.class
@@ -47,6 +51,7 @@ com/riddler/app/domain/account/UserAccount.class
 com/riddler/app/web/admin/AdminController.class
 com/riddler/app/domain/account/MongoPersistentTokenRepositoryImpl.class
 com/riddler/app/domain/post/BlogPostRepository.class
+com/riddler/app/domain/riddle/RiddleRepository.class
 com/riddler/app/domain/account/AccountService.class
 com/riddler/app/web/account/MyConnectController.class
 com/riddler/app/web/CommentNotificationSender.class

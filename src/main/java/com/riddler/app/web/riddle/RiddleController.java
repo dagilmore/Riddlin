@@ -42,7 +42,7 @@ public class RiddleController extends AbstractPublicPageController {
      * @param request
      * @return
      */
-    @RequestMapping(method = RequestMethod.GET)
+    @RequestMapping( method = RequestMethod.GET)
     public String getRiddles(Model uiModel, HttpServletRequest request) {
 
         //Get recent blog posts, add to model
@@ -62,15 +62,16 @@ public class RiddleController extends AbstractPublicPageController {
     }
 
     @RequestMapping(value="/create", method=RequestMethod.POST)
-    public @ResponseBody Riddle create(
+    public String create(Model uiModel,
             @RequestParam(value="riddle", required=true) String riddle,
             @RequestParam(value="answer", required=true) String answer){
 
         Riddle newRiddle = new Riddle();
         newRiddle.setRiddle(riddle);
         newRiddle.setAnswer(answer);
-
-        return riddleService.create(newRiddle);
+    
+        uiModel.addAttribute("riddle",riddleService.create(newRiddle));
+        return "pages/riddle";
     }
 
 

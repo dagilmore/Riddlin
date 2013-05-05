@@ -35,20 +35,6 @@ public class HomeController extends AbstractPublicPageController {
         counterService.logVisit();
 
         //Get recent blog posts, add to model
-        List<BlogPost> blogPosts = blogPostService.getPublishedPosts(1);
-        if (blogPosts.size() > 0) {
-            uiModel.addAttribute("latestBlog", blogPosts.get(0));
-        } 
-
-        //If no blog posts, return a message
-        else {
-            uiModel.addAttribute("latestBlog", null);
-            uiModel.addAttribute("blogMessage", 
-                    new Message(MessageType.INFO, "No blog post yet. Stay tuned..."));
-
-        }
-
-        //Get recent blog posts, add to model
         List<Riddle> riddles = riddleService.getAllRiddles();
         if (riddles.size() > 0) {
             uiModel.addAttribute("riddles", riddles);

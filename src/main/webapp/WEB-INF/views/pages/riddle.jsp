@@ -1,10 +1,5 @@
 <%@ include file="/WEB-INF/views/partials/header.jsp" %>
 
-<c:if test="${not empty riddles}">
-    ${riddles}
-</c:if>
-<c:if test="${not empty riddleMessage}">
-   ${riddleMessage.text}
-</c:if>
+    ${riddle.answer}
 
 <%@ include file="/WEB-INF/views/partials/footer.jsp" %>

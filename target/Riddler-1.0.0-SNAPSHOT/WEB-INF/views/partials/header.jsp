@@ -15,9 +15,9 @@
 <a href="<c:url value="/"/>">Home Anchor</a>
 <div>
 	<ul >
-		<li><a href="<c:url value="/blogs"/>">Blog</a></li>
+		<li><a href="<c:url value="/blog"/>">News</a></li>
 		<li><a href="<c:url value="/about"/>">About</a></li>
-		<li><a href="<c:url value="/contact"/>">Contact</a></li>
-		<li><a href="<c:url value="/signin"/>">Sign In</a></li>
+		<li><a href="<c:url value="/sponsorHome"/>">My Riddles</a></li>
+		<li><a href="<c:url value="/signin"/>">Sponsor!</a></li>
 	</ul>
 </div>
