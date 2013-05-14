@@ -3,25 +3,20 @@ package com.riddlin.app.web.account;
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
 
+import com.riddlin.app.web.AbstractPageController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.data.domain.Pageable;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.context.request.WebRequest;
 
 import com.riddlin.app.domain.account.AccountUtils;
 import com.riddlin.app.domain.account.UserAccount;
-import com.riddlin.app.message.Message;
-import com.riddlin.app.message.MessageType;
-import com.riddlin.app.web.AbstractPageController;
-import com.riddlin.app.web.PageWrapper;
 
 
 /**
@@ -55,7 +50,7 @@ public class MyAccountController extends AbstractPageController {
             uiModel.addAttribute("duplicateConnectionError", Boolean.TRUE);
         }
         
-        return "pages/myAccount/overview";
+        return "redirect:";
     }
 
     @RequestMapping(value = "/editProfile", produces = "text/html")

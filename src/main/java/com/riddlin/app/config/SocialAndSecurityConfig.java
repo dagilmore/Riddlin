@@ -2,6 +2,7 @@ package com.riddlin.app.config;
 
 import javax.inject.Inject;
 
+import com.riddlin.app.web.AutoConnectionSignUp;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;
@@ -46,7 +47,6 @@ import com.riddlin.app.domain.account.RememberMeTokenRepository;
 import com.riddlin.app.domain.account.UserAccount;
 import com.riddlin.app.domain.account.UserAdminService;
 import com.riddlin.app.domain.account.UserSocialConnectionRepository;
-import com.riddlin.app.web.AutoConnectionSignUp;
 
 @Configuration
 public class SocialAndSecurityConfig {

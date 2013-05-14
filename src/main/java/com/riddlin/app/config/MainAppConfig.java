@@ -13,9 +13,12 @@ import com.riddlin.app.domain.account.UserAccountRepository;
 import com.riddlin.app.domain.account.UserAdminService;
 import com.riddlin.app.domain.account.UserAdminServiceImpl;
 import com.riddlin.app.domain.account.UserSocialConnectionRepository;
-import com.riddlin.app.domain.riddle.RiddleService;
-import com.riddlin.app.domain.riddle.RiddleServiceImpl;
-import com.riddlin.app.domain.riddle.RiddleRepository;
+import com.riddlin.app.domain.task.TaskService;
+import com.riddlin.app.domain.task.TaskServiceImpl;
+import com.riddlin.app.domain.task.TaskRepository;
+import com.riddlin.app.domain.riddle.americanIdiom.AmericanIdiomService;
+import com.riddlin.app.domain.riddle.americanIdiom.AmericanIdiomServiceImpl;
+import com.riddlin.app.domain.riddle.americanIdiom.AmericanIdiomRepository;
 import com.riddlin.app.domain.system.CounterService;
 import com.riddlin.app.domain.system.CounterServiceImpl;
 
@@ -30,7 +33,9 @@ class MainAppConfig {
     @Inject
     private UserSocialConnectionRepository userSocialConnectionRepository;
     @Inject
-    private RiddleRepository riddleRepository;
+    private TaskRepository taskRepository;
+    @Inject
+    private AmericanIdiomRepository americanIdiomRepository;
 
     //Application Service beans
     @Bean
@@ -47,8 +52,12 @@ class MainAppConfig {
     }
 
     @Bean
-    public RiddleService riddleService() {
-        return new RiddleServiceImpl(riddleRepository);
+    public TaskService taskService() {
+        return new TaskServiceImpl(taskRepository);
+    }
+    @Bean
+    public AmericanIdiomService americanIdiomService() {
+        return new AmericanIdiomServiceImpl(americanIdiomRepository);
     }
 
     @Bean

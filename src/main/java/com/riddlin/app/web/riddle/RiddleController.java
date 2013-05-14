@@ -1,86 +1,29 @@
 package com.riddlin.app.web.riddle;
 
-import javax.inject.Inject;
 import javax.servlet.http.HttpServletRequest;
 
-import java.util.List;
-
+import com.riddlin.app.web.AbstractPublicPageController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.ResponseBody;
-
-import com.riddlin.app.domain.riddle.Riddle;
-import com.riddlin.app.domain.riddle.RiddleService;
-import com.riddlin.app.message.Message;
-import com.riddlin.app.message.MessageType;
-import com.riddlin.app.web.AbstractPublicPageController;
 
 
 /**
- * Controller for public riddle list, riddle view pages.
- */
+* Controller for public riddle list, riddle view pages.
+*/
 @Controller
 @RequestMapping("/riddles")
 public class RiddleController extends AbstractPublicPageController {
-    // private static final Logger logger = LoggerFactory.getLogger(RiddleController.class);
+    private static final Logger logger = LoggerFactory.getLogger(RiddleController.class);
 
-    public RiddleController() {
-    }
+    public RiddleController() {}
 
-    /**
-     * Display list of all riddles. 
-     * 
-     * @param uiModel
-     * @param request
-     * @return
-     */
     @RequestMapping( method = RequestMethod.GET)
-    public String getRiddles(Model uiModel, HttpServletRequest request) {
-
-        //Get recent blog posts, add to model
-        List<Riddle> riddles = riddleService.getAllRiddles();
-        if (riddles.size() > 0) {
-            uiModel.addAttribute("riddles", riddles);
-        } 
-
-        //If no riddles, return a message
-        else {
-            uiModel.addAttribute("riddles", null);
-            uiModel.addAttribute("riddleMessage", 
-                    new Message(MessageType.INFO, "No riddles yet. Stay tuned..."));
-
-        }
+    public String getAmericanIdioms(Model uiModel, HttpServletRequest request) {
+    	
         return "pages/riddles";
     }
-
-    @RequestMapping(value="/create", method=RequestMethod.POST)
-    public String create(Model uiModel,
-            @RequestParam(value="riddle", required=true) String riddle,
-            @RequestParam(value="answer", required=true) String answer){
-
-        Riddle newRiddle = new Riddle();
-        newRiddle.setRiddle(riddle);
-        newRiddle.setAnswer(answer);
-    
-        uiModel.addAttribute("riddle",riddleService.create(newRiddle));
-        return "pages/riddle";
-    }
-
-
 }
-
-
-
-
-
-
-
-

@@ -1,12 +1,14 @@
-<%@ include file="/WEB-INF/views/partials/header.jsp" %>
+<%@ page session="false" %>
 
-<c:if test="${not empty riddles}">
-    ${riddles}
-</c:if>
-<c:if test="${not empty riddleMessage}">
-   ${riddleMessage.text}
-</c:if>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
-<%@ include file="/WEB-INF/views/partials/newRiddle.jsp" %>
-
-<%@ include file="/WEB-INF/views/partials/footer.jsp" %>
+<tags:template>
+    <jsp:body>
+		<ul>
+	      <li><a href="#">Word Games</a></li>
+	      <li><a href="#">Puzzles</a></li>
+	      <li><a href="#">Conundrums</a></li>
+		</ul>
+    </jsp:body>
+</tags:template>

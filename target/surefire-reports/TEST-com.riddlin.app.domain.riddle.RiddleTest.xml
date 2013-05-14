@@ -63,5 +63,5 @@
   <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testSetAnswer"/>
   <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testGetRiddle"/>
   <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testSetRiddle"/>
-  <testcase time="0.001" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testToString"/>
+  <testcase time="0" classname="com.riddlin.app.domain.riddle.RiddleTest" name="testToString"/>
 </testsuite>

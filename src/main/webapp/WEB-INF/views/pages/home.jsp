@@ -1,19 +1,9 @@
-<%@ include file="/WEB-INF/views/partials/header.jsp" %>
+<%@ taglib prefix="sec" uri="http://www.springframework.org/security/tags" %>
 
-<c:if test="${not empty latestBlog}">
-    ${latestBlog.title}
-</c:if>
-<c:if test="${not empty blogMessage}">
-   ${blogMessage.text}
-</c:if>
+<sec:authorize access="isAuthenticated()">  
+    <%@ include file="/WEB-INF/views/pages/riddles.jsp" %> 
+</sec:authorize>
+<sec:authorize access="!isAuthenticated()"> 
+    <%@ include file="/WEB-INF/views/pages/signin.jsp" %> 
+</sec:authorize>
 
-<c:if test="${not empty riddles}">
-    ${riddles}
-</c:if>
-<c:if test="${not empty riddleMessage}">
-   ${riddleMessage.text}
-</c:if>
-
-
-
-<%@ include file="/WEB-INF/views/partials/footer.jsp" %>

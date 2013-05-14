@@ -1,27 +1,22 @@
 package com.riddlin.app.web.admin;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.validation.Valid;
-
+import com.riddlin.app.web.AbstractPageController;
+import com.riddlin.app.web.PageWrapper;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
-import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.riddlin.app.domain.account.UserAccount;
-import com.riddlin.app.web.AbstractPageController;
-import com.riddlin.app.web.PageWrapper;
 
 /**
  * Controller for admin pages. 
  */
 @Controller
 @RequestMapping("/admin")
-public class AdminController extends AbstractPageController{
+public class AdminController extends AbstractPageController {
     //private static final Logger logger = LoggerFactory.getLogger(AdminController.class);
 
     public AdminController() {

@@ -1,5 +1,10 @@
-<%@ include file="/WEB-INF/views/partials/header.jsp" %>
+<%@ page session="false" %>
 
-Oops. We didn't find that one...
-	
-<%@ include file="/WEB-INF/views/partials/footer.jsp" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+
+<tags:template>
+    <jsp:body>
+	Oops... we didn't find that one!
+    </jsp:body>
+</tags:template>

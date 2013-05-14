@@ -1,5 +1,13 @@
-<%@ include file="/WEB-INF/views/partials/header.jsp" %>
+<%@ page session="false" %>
 
-<%@ include file="/WEB-INF/views/partials/signinForm.jsp" %>
+<%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
+<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 
-<%@ include file="/WEB-INF/views/partials/footer.jsp" %>
+<tags:template>
+    <jsp:body>
+
+	<%@ include file="/WEB-INF/views/partials/signinForm.jsp" %>
+
+    </jsp:body>
+</tags:template>

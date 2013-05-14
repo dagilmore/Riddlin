@@ -13,7 +13,8 @@ import com.riddlin.app.domain.account.AccountService;
 import com.riddlin.app.domain.account.AccountUtils;
 import com.riddlin.app.domain.account.UserAccount;
 import com.riddlin.app.domain.system.CounterService;
-import com.riddlin.app.domain.riddle.RiddleService;
+import com.riddlin.app.domain.task.TaskService;
+import com.riddlin.app.domain.riddle.americanIdiom.AmericanIdiomService;
 
 public class AbstractPageController {
     @Inject
@@ -21,7 +22,9 @@ public class AbstractPageController {
     @Inject
     protected CounterService counterService;
     @Inject
-    protected RiddleService riddleService;
+    protected TaskService taskService;
+    @Inject
+    protected AmericanIdiomService americanIdiomService;
 
 
     @ModelAttribute("loggedinUserAccount")
