@@ -69,7 +69,7 @@
 
 	<!-- Handles Spring requests -->
 	<servlet>
-		<servlet-name>JiwhizBlogWeb</servlet-name>
+		<servlet-name>RiddlinWebApp</servlet-name>
 		<servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
 		<init-param>
 			<param-name>contextConfigLocation</param-name>
@@ -79,7 +79,7 @@
 	</servlet>
 
 	<servlet-mapping>
-		<servlet-name>JiwhizBlogWeb</servlet-name>
+		<servlet-name>RiddlinWebApp</servlet-name>
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 

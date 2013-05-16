@@ -2,7 +2,7 @@ package com.riddlin.app.config;
 
 import javax.inject.Inject;
 
-import com.riddlin.app.web.AutoConnectionSignUp;
+import com.riddlin.app.controller.web.AutoConnectionSignUp;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Scope;

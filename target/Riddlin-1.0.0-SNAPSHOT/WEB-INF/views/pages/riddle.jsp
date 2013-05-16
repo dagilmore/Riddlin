@@ -1,13 +1,14 @@
 <%@ page session="false" %>
 
 <%@ taglib prefix="tags" tagdir="/WEB-INF/tags" %>
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 
 <tags:template>
     <jsp:body>
 
 		<c:if test="${not empty riddle}">
-			<%@ include file="/WEB-INF/views/partials/riddles/${riddle.type}.jsp" %>
+
+			<jsp:include page="${path}" />
+
 		</c:if>
 		<c:if test="${not empty riddleMessage}">
 		   ${riddleMessage.text}

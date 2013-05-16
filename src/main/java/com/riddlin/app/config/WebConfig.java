@@ -28,7 +28,7 @@ import org.springframework.web.servlet.view.InternalResourceViewResolver;
 
 @Configuration
 @EnableWebMvc
-@ComponentScan(basePackages = "com.riddlin.app.web")
+@ComponentScan(basePackages = "com.riddlin.app.controller")
 @ImportResource("classpath:security.xml")
 public class WebConfig extends WebMvcConfigurerAdapter {
 
