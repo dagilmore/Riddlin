@@ -1,0 +1,111 @@
+@charset "utf-8";
+/* CSS Document */
+
+<!-- Global Styles -->
+body {
+	background-color:;
+}
+
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Quando', serif;
+	text-align:center;		
+}
+li {
+	font-family: 'Lato', sans-serif;
+}
+li a{
+	 text-decoration:none;
+	 color:#000;
+}
+li a:hover {
+	color:#1FCABA;
+}
+
+<!-- Header -->
+
+#header {
+	clear: both;
+	margin: 30px 0;
+	background-color:#FFF;
+	height:160px;
+	overflow: auto;
+}
+h1 {
+	font-size:40px;
+	line-height:20px;
+}
+h1 a {
+	text-decoration: none;
+	color: #222;
+}
+
+div.centerDiv {
+    width: inherit;
+	text-align: center;
+}
+ul.centerUL {
+    margin: 0px auto;
+    line-height: 1.4;
+}
+.centerUL li {
+    display: inline;
+    text-align: center;
+	margin: 0 1%;
+}
+#socialWrap {
+	position:absolute;
+	top: 5;
+	left:5;
+}
+#socialLogin {
+	margin: 0 auto;
+}
+#socialLogin form{
+	float:left;
+}
+
+#riddle div {
+  display: block;
+  width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ 
+h3 {
+  font: 400 40px/1.5 Helvetica, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+ 
+#riddle ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+ 
+#riddle li {
+  font: 200 20px/1.5 Helvetica, Verdana, sans-serif;
+  border-b ottom: 1px solid #ccc;
+}
+ 
+#riddle li:last-child {
+  border: none;
+}
+ 
+#riddle li a {
+  text-decoration: none;
+  color: #000;
+  display: block;
+  width: inherit;
+ 
+  -webkit-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -moz-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -o-transition: font-size 0.3s ease, background-color 0.3s ease;
+  -ms-transition: font-size 0.3s ease, background-color 0.3s ease;
+  transition: font-size 0.3s ease, background-color 0.3s ease;
+}
+ 
+#riddle li a:hover {
+  font-size: 30px;
+  background: #f6f6f6;
+}
